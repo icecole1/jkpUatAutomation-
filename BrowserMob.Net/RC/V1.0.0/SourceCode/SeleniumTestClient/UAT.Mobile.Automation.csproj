@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\NUnit3TestAdapter.3.8.0\build\net35\NUnit3TestAdapter.props" Condition="Exists('packages\NUnit3TestAdapter.3.8.0\build\net35\NUnit3TestAdapter.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0C73912E-E365-421E-8296-73A301B584F0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UAT.Mobile.Automation</RootNamespace>
+    <AssemblyName>UAT.Mobile.Automation</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">15.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutomationData, Version=1.0.0.24, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\AutomationData.1.0.0.24\lib\net46\AutomationData.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Dapper, Version=1.50.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Dapper.1.50.2\lib\net451\Dapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <HintPath>packages\Selenium.WebDriver.PhantomJS.Xplatform.2.45.0.1\lib\net40\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.7.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>packages\NUnit.3.7.1\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="TechTalk.SpecFlow, Version=2.2.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
+      <HintPath>packages\SpecFlow.2.2.0\lib\net45\TechTalk.SpecFlow.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver, Version=3.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Selenium.WebDriver.3.5.1\lib\net40\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=3.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Selenium.Support.3.5.1\lib\net40\WebDriver.Support.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\ATCustomer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ATCustomer.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\AUCustomer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AUCustomer.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\CountryCode.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CountryCode.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DECustomer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DECustomer.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\EUCustomer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EUCustomer.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\FRCustomer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FRCustomer.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\PayPal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PayPal.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\Constant.cs" />
+    <Compile Include="Helpers\CustomerData.cs" />
+    <Compile Include="Mobile\Features\Address1.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Address.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Mobile\Features\CalculateBasket.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CalculateBasket.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Mobile\Features\LoginCheckout1.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginCheckout.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Mobile\Features\LoginMain.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginMain.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Mobile\Features\Payment.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Payment.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Mobile\Features\PayPalExpress.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PayPalExpress.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Mobile\Features\PLP.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PLP.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Mobile\Features\PDP.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PDP.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Mobile\Features\ShoppingBasket.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ShoppingBasket.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Mobile\Hooks.cs" />
+    <Compile Include="Mobile\Pages\GuestRegistrationPage.cs" />
+    <Compile Include="Mobile\Pages\Modals\ClickAndCollectPostcodeModal.cs" />
+    <Compile Include="Mobile\Pages\Modals\HemmingModal.cs" />
+    <Compile Include="Mobile\Pages\OrderConfirmationPage.cs" />
+    <Compile Include="Mobile\Pages\Panels\AccountCredit.cs" />
+    <Compile Include="Mobile\Pages\Panels\Addresses.cs" />
+    <Compile Include="Mobile\Pages\Panels\AddressesCollapsed.cs" />
+    <Compile Include="Mobile\Pages\Panels\BillingAddress.cs" />
+    <Compile Include="Mobile\Pages\Panels\CheckoutNotification.cs" />
+    <Compile Include="Mobile\Pages\Panels\CollectionAddress.cs" />
+    <Compile Include="Mobile\Pages\Panels\ContactDetails.cs" />
+    <Compile Include="Mobile\Pages\Panels\DeliveryAddress.cs" />
+    <Compile Include="Mobile\Pages\Panels\DeliveryOptions.cs" />
+    <Compile Include="Mobile\Pages\Panels\GiftVoucher.cs" />
+    <Compile Include="Mobile\Pages\Panels\LocationList.cs" />
+    <Compile Include="Mobile\Pages\Panels\SortBy.cs" />
+    <Compile Include="Mobile\Pages\Panels\OtherInstructions.cs" />
+    <Compile Include="Mobile\Pages\Panels\SavedCard.cs" />
+    <Compile Include="Mobile\Pages\Panels\ShoppingBag.cs" />
+    <Compile Include="Mobile\Pages\Panels\Payment.cs" />
+    <Compile Include="Configuration.cs" />
+    <Compile Include="Data\Card.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Card.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\UKCustomer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UKCustomer.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DataHelper.cs" />
+    <Compile Include="Mobile\Features\Delivery.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Delivery.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\Enums.cs" />
+    <Compile Include="MobileNavigation.cs" />
+    <Compile Include="Mobile\Pages\Panels\HeaderMenu.cs" />
+    <Compile Include="Mobile\Pages\Panels\Product.cs" />
+    <Compile Include="Mobile\Pages\BasePage.cs" />
+    <Compile Include="Mobile\Pages\CheckoutPage.cs" />
+    <Compile Include="Mobile\Pages\Modals\FeedbackModal.cs" />
+    <Compile Include="Mobile\Pages\HomePage.cs" />
+    <Compile Include="Mobile\Pages\LoginPage.cs" />
+    <Compile Include="Mobile\Pages\Modals\MonetateModal.cs" />
+    <Compile Include="Mobile\Pages\PayPalLoginOptionPage.cs" />
+    <Compile Include="Mobile\Pages\PayPalLoginPage.cs" />
+    <Compile Include="Mobile\Pages\ProductDetailPage.cs" />
+    <Compile Include="Mobile\Pages\ProductListingPage.cs" />
+    <Compile Include="Mobile\Pages\RegistrationPage.cs" />
+    <Compile Include="Mobile\Steps\AddressSteps.cs" />
+    <Compile Include="Mobile\Steps\CalculateBasketSteps.cs" />
+    <Compile Include="Mobile\Steps\DeliverySteps.cs" />
+    <Compile Include="Mobile\Steps\LoginMainSteps.cs" />
+    <Compile Include="Mobile\Steps\LoginCheckoutSteps.cs" />
+    <Compile Include="Mobile\Steps\PaymentSteps.cs" />
+    <Compile Include="Mobile\Steps\PayPalExpressSteps.cs" />
+    <Compile Include="Mobile\Steps\PDPSteps.cs" />
+    <Compile Include="Mobile\Steps\PLPSteps.cs" />
+    <Compile Include="Mobile\Steps\ShoppingBasketSteps.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Helpers\UIHelper.cs" />
+    <Compile Include="Data\USCustomer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>USCustomer.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WebDriver\WebDriverFactory.cs" />
+    <Compile Include="WebDriver\WebDriverManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="browsermob-proxy-2.1.4\bin\bmp.log" />
+    <None Include="browsermob-proxy-2.1.4\bin\browsermob-proxy" />
+    <None Include="browsermob-proxy-2.1.4\bin\browsermob-proxy.bat" />
+    <None Include="browsermob-proxy-2.1.4\bin\conf\bmp-logging.yaml" />
+    <None Include="browsermob-proxy-2.1.4\README.md" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\BodenCA-2026-Trust.cer" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\ca-certificate-ec.cer" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\ca-certificate-rsa.cer" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\ca-keystore-ec.p12" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\ca-keystore-rsa.p12" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\orca01pdsvtc_BodenRoot-CA-Trust.cer" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\Soputm00pdfwtc-IssuingCA-Trust.cer" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\soputm02pdfwpt-IssuingCA-Trust.cer" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\Subca01pdsvtc-BodenSub-CA-Trust.cer" />
+    <None Include="Mobile\Features\Address.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Address1.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Mobile\Features\CalculateBasket.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>CalculateBasket.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Mobile\Features\Delivery.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Delivery.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Mobile\Features\LoginMain.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>LoginMain.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Mobile\Features\LoginCheckout.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>LoginCheckout1.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Mobile\Features\Payment.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Payment.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Mobile\Features\PayPalExpress.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>PayPalExpress.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Mobile\Features\PLP.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>PLP.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Mobile\Features\PDP.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>PDP.feature.cs</LastGenOutput>
+    </None>
+    <None Include="Mobile\Features\ShoppingBasket.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ShoppingBasket.feature.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Data\ATCustomer.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ATCustomer.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\AUCustomer.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AUCustomer.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\Card.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Card.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\CountryCode.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CountryCode.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\DECustomer.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DECustomer.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\EUCustomer.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>EUCustomer.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\FRCustomer.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FRCustomer.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\PayPal.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PayPal.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\UKCustomer.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UKCustomer.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\USCustomer.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>USCustomer.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="browsermob-proxy-2.1.4\browsermob-core-2.1.4-javadoc.jar" />
+    <Content Include="browsermob-proxy-2.1.4\browsermob-core-2.1.4-sources.jar" />
+    <Content Include="browsermob-proxy-2.1.4\browsermob-rest-2.1.4-javadoc.jar" />
+    <Content Include="browsermob-proxy-2.1.4\browsermob-rest-2.1.4-sources.jar" />
+    <Content Include="browsermob-proxy-2.1.4\lib\browsermob-dist-2.1.4.jar" />
+    <Content Include="browsermob-proxy-2.1.4\LICENSE.txt" />
+    <Content Include="browsermob-proxy-2.1.4\README.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BrowserMob.Net\BrowserMob.Net.csproj">
+      <Project>{391b5fed-59e5-462d-bfea-8894d7a79956}</Project>
+      <Name>BrowserMob.Net</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Selenium.Firefox.WebDriver.0.18.0\build\Selenium.Firefox.WebDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Selenium.Firefox.WebDriver.0.18.0\build\Selenium.Firefox.WebDriver.targets'))" />
+    <Error Condition="!Exists('packages\NUnit3TestAdapter.3.8.0\build\net35\NUnit3TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\NUnit3TestAdapter.3.8.0\build\net35\NUnit3TestAdapter.props'))" />
+    <Error Condition="!Exists('packages\Selenium.PhantomJS.WebDriver.2.1.1\build\Selenium.PhantomJS.WebDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Selenium.PhantomJS.WebDriver.2.1.1\build\Selenium.PhantomJS.WebDriver.targets'))" />
+    <Error Condition="!Exists('packages\Selenium.Chrome.WebDriver.2.31\build\Selenium.Chrome.WebDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Selenium.Chrome.WebDriver.2.31\build\Selenium.Chrome.WebDriver.targets'))" />
+  </Target>
+  <Import Project="packages\Selenium.Firefox.WebDriver.0.18.0\build\Selenium.Firefox.WebDriver.targets" Condition="Exists('packages\Selenium.Firefox.WebDriver.0.18.0\build\Selenium.Firefox.WebDriver.targets')" />
+  <Import Project="packages\Selenium.PhantomJS.WebDriver.2.1.1\build\Selenium.PhantomJS.WebDriver.targets" Condition="Exists('packages\Selenium.PhantomJS.WebDriver.2.1.1\build\Selenium.PhantomJS.WebDriver.targets')" />
+  <Import Project="packages\Selenium.Chrome.WebDriver.2.31\build\Selenium.Chrome.WebDriver.targets" Condition="Exists('packages\Selenium.Chrome.WebDriver.2.31\build\Selenium.Chrome.WebDriver.targets')" />
+</Project>

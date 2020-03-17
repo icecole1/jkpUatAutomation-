@@ -1,0 +1,91 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UAT.Mobile.Automation", "UAT.Mobile.Automation.csproj", "{0C73912E-E365-421E-8296-73A301B584F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		au.mobile.boden.com|Any CPU = au.mobile.boden.com|Any CPU
+		au.mobile.preprod.boden.com|Any CPU = au.mobile.preprod.boden.com|Any CPU
+		au.mobile.stage.boden.com|Any CPU = au.mobile.stage.boden.com|Any CPU
+		au.mobile.stageredesign.boden.com|Any CPU = au.mobile.stageredesign.boden.com|Any CPU
+		de.mobile.boden.com|Any CPU = de.mobile.boden.com|Any CPU
+		de.mobile.preprod.boden.com|Any CPU = de.mobile.preprod.boden.com|Any CPU
+		de.mobile.stage.boden.com|Any CPU = de.mobile.stage.boden.com|Any CPU
+		de.mobile.stageredesign.boden.com|Any CPU = de.mobile.stageredesign.boden.com|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		fr.mobile.boden.com|Any CPU = fr.mobile.boden.com|Any CPU
+		fr.mobile.preprod.boden.com|Any CPU = fr.mobile.preprod.boden.com|Any CPU
+		fr.mobile.stage.boden.com|Any CPU = fr.mobile.stage.boden.com|Any CPU
+		fr.mobile.stageredesign.boden.com|Any CPU = fr.mobile.stageredesign.boden.com|Any CPU
+		fr-dx.bodenstaging.com|Any CPU = fr-dx.bodenstaging.com|Any CPU
+		Release|Any CPU = Release|Any CPU
+		uk.mobile.boden.com|Any CPU = uk.mobile.boden.com|Any CPU
+		uk.mobile.preprod.boden.com|Any CPU = uk.mobile.preprod.boden.com|Any CPU
+		uk.mobile.stage.boden.com|Any CPU = uk.mobile.stage.boden.com|Any CPU
+		uk.mobile.stageredesign.boden.com|Any CPU = uk.mobile.stageredesign.boden.com|Any CPU
+		uk-dx.bodenstaging.com|Any CPU = uk-dx.bodenstaging.com|Any CPU
+		us.mobile.boden.com|Any CPU = us.mobile.boden.com|Any CPU
+		us.mobile.preprod.boden.com|Any CPU = us.mobile.preprod.boden.com|Any CPU
+		us.mobile.stage.boden.com|Any CPU = us.mobile.stage.boden.com|Any CPU
+		us.mobile.stageredesign.boden.com|Any CPU = us.mobile.stageredesign.boden.com|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C73912E-E365-421E-8296-73A301B584F0}.au.mobile.boden.com|Any CPU.ActiveCfg = au.mobile.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.au.mobile.boden.com|Any CPU.Build.0 = au.mobile.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.au.mobile.preprod.boden.com|Any CPU.ActiveCfg = au.mobile.preprod.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.au.mobile.preprod.boden.com|Any CPU.Build.0 = au.mobile.preprod.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.au.mobile.stage.boden.com|Any CPU.ActiveCfg = au.mobile.stage.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.au.mobile.stage.boden.com|Any CPU.Build.0 = au.mobile.stage.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.au.mobile.stageredesign.boden.com|Any CPU.ActiveCfg = au.mobile.stageredesign.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.au.mobile.stageredesign.boden.com|Any CPU.Build.0 = au.mobile.stageredesign.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.de.mobile.boden.com|Any CPU.ActiveCfg = de.mobile.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.de.mobile.boden.com|Any CPU.Build.0 = de.mobile.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.de.mobile.preprod.boden.com|Any CPU.ActiveCfg = de.mobile.preprod.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.de.mobile.preprod.boden.com|Any CPU.Build.0 = de.mobile.preprod.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.de.mobile.stage.boden.com|Any CPU.ActiveCfg = de.mobile.stage.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.de.mobile.stage.boden.com|Any CPU.Build.0 = de.mobile.stage.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.de.mobile.stageredesign.boden.com|Any CPU.ActiveCfg = de.mobile.stageredesign.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.de.mobile.stageredesign.boden.com|Any CPU.Build.0 = de.mobile.stageredesign.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.fr.mobile.boden.com|Any CPU.ActiveCfg = fr.mobile.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.fr.mobile.boden.com|Any CPU.Build.0 = fr.mobile.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.fr.mobile.preprod.boden.com|Any CPU.ActiveCfg = fr.mobile.preprod.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.fr.mobile.preprod.boden.com|Any CPU.Build.0 = fr.mobile.preprod.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.fr.mobile.stage.boden.com|Any CPU.ActiveCfg = fr.mobile.stage.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.fr.mobile.stage.boden.com|Any CPU.Build.0 = fr.mobile.stage.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.fr.mobile.stageredesign.boden.com|Any CPU.ActiveCfg = fr.mobile.stageredesign.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.fr.mobile.stageredesign.boden.com|Any CPU.Build.0 = fr.mobile.stageredesign.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.fr-dx.bodenstaging.com|Any CPU.ActiveCfg = fr-dx.bodenstaging.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.fr-dx.bodenstaging.com|Any CPU.Build.0 = fr-dx.bodenstaging.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.uk.mobile.boden.com|Any CPU.ActiveCfg = us.mobile.stageredesign.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.uk.mobile.boden.com|Any CPU.Build.0 = us.mobile.stageredesign.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.uk.mobile.preprod.boden.com|Any CPU.ActiveCfg = uk.mobile.preprod.don.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.uk.mobile.preprod.boden.com|Any CPU.Build.0 = uk.mobile.preprod.don.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.uk.mobile.stage.boden.com|Any CPU.ActiveCfg = uk.mobile.stage.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.uk.mobile.stage.boden.com|Any CPU.Build.0 = uk.mobile.stage.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.uk.mobile.stageredesign.boden.com|Any CPU.ActiveCfg = uk.mobile.stageredesign.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.uk.mobile.stageredesign.boden.com|Any CPU.Build.0 = uk.mobile.stageredesign.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.uk-dx.bodenstaging.com|Any CPU.ActiveCfg = uk-dx.bodenstaging.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.uk-dx.bodenstaging.com|Any CPU.Build.0 = uk-dx.bodenstaging.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.us.mobile.boden.com|Any CPU.ActiveCfg = us.mobile.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.us.mobile.boden.com|Any CPU.Build.0 = us.mobile.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.us.mobile.preprod.boden.com|Any CPU.ActiveCfg = us.mobile.preprod.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.us.mobile.preprod.boden.com|Any CPU.Build.0 = us.mobile.preprod.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.us.mobile.stage.boden.com|Any CPU.ActiveCfg = us.mobile.stage.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.us.mobile.stage.boden.com|Any CPU.Build.0 = us.mobile.stage.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.us.mobile.stageredesign.boden.com|Any CPU.ActiveCfg = us.mobile.stageredesign.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.us.mobile.stageredesign.boden.com|Any CPU.Build.0 = us.mobile.stageredesign.boden.com|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {174EA661-7506-4C51-B8DF-4A642D6AC43F}
+	EndGlobalSection
+EndGlobal

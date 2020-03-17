@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\SWF\UAT Automation\Mobile\Dev\Main\SourceCode\lib\BrowserMob.Net.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{391B5FED-59E5-462D-BFEA-8894D7A79956}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>BrowserMob.Net</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>BrowserMob.Net</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Client.cs" />
+    <Compile Include="LimitOptions.cs" />
+    <Compile Include="Server.cs" />
+    <Compile Include="HAR\Browser.cs" />
+    <Compile Include="HAR\Cache.cs" />
+    <Compile Include="HAR\CacheEntry.cs" />
+    <Compile Include="HAR\Content.cs" />
+    <Compile Include="HAR\Cookie.cs" />
+    <Compile Include="HAR\Creator.cs" />
+    <Compile Include="HAR\Entry.cs" />
+    <Compile Include="HAR\HarResult.cs" />
+    <Compile Include="HAR\Header.cs" />
+    <Compile Include="HAR\Log.cs" />
+    <Compile Include="HAR\Page.cs" />
+    <Compile Include="HAR\PageTimings.cs" />
+    <Compile Include="HAR\Param.cs" />
+    <Compile Include="HAR\PostData.cs" />
+    <Compile Include="HAR\QueryStringItem.cs" />
+    <Compile Include="HAR\Request.cs" />
+    <Compile Include="HAR\Response.cs" />
+    <Compile Include="HAR\Timings.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="browsermob-proxy-2.1.4\bin\bmp.log" />
+    <None Include="browsermob-proxy-2.1.4\bin\browsermob-proxy" />
+    <None Include="browsermob-proxy-2.1.4\bin\browsermob-proxy.bat" />
+    <None Include="browsermob-proxy-2.1.4\bin\conf\bmp-logging.yaml" />
+    <None Include="browsermob-proxy-2.1.4\README.md" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\BodenCA-2026-Trust.cer" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\ca-certificate-ec.cer" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\ca-certificate-rsa.cer" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\ca-keystore-ec.p12" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\ca-keystore-rsa.p12" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\orca01pdsvtc_BodenRoot-CA-Trust.cer" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\Soputm00pdfwtc-IssuingCA-Trust.cer" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\soputm02pdfwpt-IssuingCA-Trust.cer" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\Subca01pdsvtc-BodenSub-CA-Trust.cer" />
+    <None Include="BrowserMob.Net.nuspec" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="browsermob-proxy-2.1.4\browsermob-core-2.1.4-javadoc.jar" />
+    <Content Include="browsermob-proxy-2.1.4\browsermob-core-2.1.4-sources.jar" />
+    <Content Include="browsermob-proxy-2.1.4\browsermob-rest-2.1.4-javadoc.jar" />
+    <Content Include="browsermob-proxy-2.1.4\browsermob-rest-2.1.4-sources.jar" />
+    <Content Include="browsermob-proxy-2.1.4\lib\browsermob-dist-2.1.4.jar" />
+    <Content Include="browsermob-proxy-2.1.4\LICENSE.txt" />
+    <Content Include="browsermob-proxy-2.1.4\README.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

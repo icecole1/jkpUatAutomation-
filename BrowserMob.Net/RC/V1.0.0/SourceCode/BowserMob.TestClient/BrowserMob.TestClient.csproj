@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1CBB1FB5-165A-4845-AE17-1BD6548D38E0}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BowserMob.TestClient</RootNamespace>
+    <AssemblyName>BowserMob.TestClient</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="browsermob-proxy-2.1.4\bin\bmp.log" />
+    <None Include="browsermob-proxy-2.1.4\bin\browsermob-proxy" />
+    <None Include="browsermob-proxy-2.1.4\bin\browsermob-proxy.bat" />
+    <None Include="browsermob-proxy-2.1.4\bin\conf\bmp-logging.yaml" />
+    <None Include="browsermob-proxy-2.1.4\README.md" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\BodenCA-2026-Trust.cer" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\ca-certificate-ec.cer" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\ca-certificate-rsa.cer" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\ca-keystore-ec.p12" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\ca-keystore-rsa.p12" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\orca01pdsvtc_BodenRoot-CA-Trust.cer" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\Soputm00pdfwtc-IssuingCA-Trust.cer" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\soputm02pdfwpt-IssuingCA-Trust.cer" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\Subca01pdsvtc-BodenSub-CA-Trust.cer" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BrowserMob.Net\BrowserMob.Net.csproj">
+      <Project>{391b5fed-59e5-462d-bfea-8894d7a79956}</Project>
+      <Name>BrowserMob.Net</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="browsermob-proxy-2.1.4\browsermob-core-2.1.4-javadoc.jar" />
+    <Content Include="browsermob-proxy-2.1.4\browsermob-core-2.1.4-sources.jar" />
+    <Content Include="browsermob-proxy-2.1.4\browsermob-rest-2.1.4-javadoc.jar" />
+    <Content Include="browsermob-proxy-2.1.4\browsermob-rest-2.1.4-sources.jar" />
+    <Content Include="browsermob-proxy-2.1.4\lib\browsermob-dist-2.1.4.jar" />
+    <Content Include="browsermob-proxy-2.1.4\LICENSE.txt" />
+    <Content Include="browsermob-proxy-2.1.4\README.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

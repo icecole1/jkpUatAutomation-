@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <id>BrowserMob.Net</id>
+    <description>Client Library for UAT Test Automation</description>
+    <authors>Boden Ltd</authors>
+    <version>$version$</version>
+    <dependencies>
+      <group targetFramework="net46-client">
+        <dependency id="Newtonsoft.Json" version="10.0.3" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\BrowserMob.Net\bin\release\BrowserMob.Net.dll" target="lib\net46\BrowserMob.Net.dll" />
+    <file src="browsermob-proxy-2.1.4\**" target="content\browsermob-proxy-2.1.4\" />
+  </files>
+</package>

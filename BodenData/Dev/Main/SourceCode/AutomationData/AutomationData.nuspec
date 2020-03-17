@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <id>AutomationData</id>
+    <description>Client Library for UAT Test Automation</description>
+    <authors>Boden Ltd</authors>
+    <version>$version$</version>
+    <dependencies>
+      <group targetFramework="net46-client">
+        <dependency id="Dapper" version="1.50.2" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\release\AutomationData.dll" target="lib\net46\AutomationData.dll" />
+    <file src="bin\release\Dapper.dll" target="lib\net46\Dapper.dll" />
+  </files>
+</package>

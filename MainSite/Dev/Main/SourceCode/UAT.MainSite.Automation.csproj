@@ -1,0 +1,931 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\NUnit3TestAdapter.3.9.0\build\net35\NUnit3TestAdapter.props" Condition="Exists('packages\NUnit3TestAdapter.3.9.0\build\net35\NUnit3TestAdapter.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0C73912E-E365-421E-8296-73A301B584F0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UAT.MainSite.Automation</RootNamespace>
+    <AssemblyName>UAT.MainSite.Automation</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">15.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'uk.main.preprod.boden.com|AnyCPU'">
+    <OutputPath>bin\uk.main.preprod.boden.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'us.main.preprod.boden.com|AnyCPU'">
+    <OutputPath>bin\us.main.preprod.boden.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'de.main.preprod.boden.com|AnyCPU'">
+    <OutputPath>bin\de.main.preprod.boden.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'at.main.preprod.boden.com|AnyCPU'">
+    <OutputPath>bin\at.main.preprod.boden.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'fr.main.preprod.boden.com|AnyCPU'">
+    <OutputPath>bin\fr.main.preprod.boden.com\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'eu.main.preprod.boden.com|AnyCPU'">
+    <OutputPath>bin\eu.main.preprod.boden.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'au.main.preprod.boden.com|AnyCPU'">
+    <OutputPath>bin\au.main.preprod.boden.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'at.main.stageredesign.boden.com|AnyCPU'">
+    <OutputPath>bin\at.main.stageredesign.boden.com\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'au.main.stageredesign.boden.com|AnyCPU'">
+    <OutputPath>bin\au.main.stageredesign.boden.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'de.main.stageredesign.boden.com|AnyCPU'">
+    <OutputPath>bin\de.main.stageredesign.boden.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'eu.main.stageredesign.boden.com|AnyCPU'">
+    <OutputPath>bin\eu.main.stageredesign.boden.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'fr.main.stageredesign.boden.com|AnyCPU'">
+    <OutputPath>bin\fr.main.stageredesign.boden.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'uk.main.stageredesign.boden.com|AnyCPU'">
+    <OutputPath>bin\uk.main.stageredesign.boden.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'us.main.stageredesign.boden.com|AnyCPU'">
+    <OutputPath>bin\us.main.stageredesign.boden.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'at.main.stage.boden.com|AnyCPU'">
+    <OutputPath>bin\at.main.stage.boden.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'au.main.stage.boden.com|AnyCPU'">
+    <OutputPath>bin\au.main.stage.boden.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'de.main.stage.boden.com|AnyCPU'">
+    <OutputPath>bin\de.main.stage.boden.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'eu.main.stage.boden.com|AnyCPU'">
+    <OutputPath>bin\eu.main.stage.boden.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'fr.main.stage.boden.com|AnyCPU'">
+    <OutputPath>bin\fr.main.stage.boden.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'uk.main.stage.boden.com|AnyCPU'">
+    <OutputPath>bin\uk.main.stage.boden.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'us.main.stage.boden.com|AnyCPU'">
+    <OutputPath>bin\us.main.stage.boden.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'at.main.boden.com|AnyCPU'">
+    <OutputPath>bin\at.main.boden.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'au.main.boden.com|AnyCPU'">
+    <OutputPath>bin\au.main.boden.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'de.main.boden.com|AnyCPU'">
+    <OutputPath>bin\de.main.boden.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'eu.main.boden.com|AnyCPU'">
+    <OutputPath>bin\eu.main.boden.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'fr.main.boden.com|AnyCPU'">
+    <OutputPath>bin\fr.main.boden.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'uk.main.boden.com|AnyCPU'">
+    <OutputPath>bin\uk.main.boden.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'us.main.boden.com|AnyCPU'">
+    <OutputPath>bin\us.main.boden.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'globale.jp.main.stageredesign.boden.com|AnyCPU'">
+    <OutputPath>bin\globale.jp.main.stageredesign.boden.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'uk-dx.bodenstaging.com|AnyCPU' ">
+    <OutputPath>bin\App.uk-dx.bodenstaging.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'fr-dx.bodenstaging.com|AnyCPU'">
+    <OutputPath>bin\fr-dx.bodenstaging.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'm-fr-dx.bodenstaging.com|AnyCPU'">
+    <OutputPath>bin\m-fr-dx.bodenstaging.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'de-dx.bodenstaging.com|AnyCPU'">
+    <OutputPath>bin\de-dx.bodenstaging.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'at-dx.bodenstaging.com|AnyCPU'">
+    <OutputPath>bin\at-dx.bodenstaging.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'us-dx.bodenstaging.com|AnyCPU'">
+    <OutputPath>bin\us-dx.bodenstaging.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'au-dx.bodenstaging.com|AnyCPU'">
+    <OutputPath>bin\au-dx.bodenstaging.com\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'eu-dx.bodenstaging.com|AnyCPU'">
+    <OutputPath>bin\eu-dx.bodenstaging.com\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutomationData, Version=1.1.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\AutomationData.1.1.0.2\lib\net46\AutomationData.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="BrowserMob.Net, Version=1.0.0.34, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\BrowserMob.Net.1.0.0.34\lib\net46\BrowserMob.Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Dapper, Version=1.50.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Dapper.1.50.4\lib\net451\Dapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <HintPath>packages\Selenium.WebDriver.PhantomJS.Xplatform.2.45.0.1\lib\net40\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.9.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>packages\NUnit.3.9.0\lib\net45\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="TechTalk.SpecFlow, Version=2.2.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
+      <HintPath>packages\SpecFlow.2.2.1\lib\net45\TechTalk.SpecFlow.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver, Version=3.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Selenium.WebDriver.3.8.0\lib\net45\WebDriver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=3.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Selenium.Support.3.8.0\lib\net45\WebDriver.Support.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\ATCustomer.Designer.cs" />
+    <Compile Include="Data\ATMenu.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ATMenu.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Menu.Designer.cs">
+      <DependentUpon>Menu.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Data\AUMenu.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AUMenu.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Cookies.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cookies.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Currency.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Currency.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\ATMarketElementId.Designer.cs">
+      <DependentUpon>ATMarketElementId.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Data\AUMarketElementId.Designer.cs">
+      <DependentUpon>AUMarketElementId.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Data\EUMarketElementId.Designer.cs">
+      <DependentUpon>EUMarketElementId.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Data\DEMenu.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DEMenu.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\ElementIdMapper.cs" />
+    <Compile Include="Data\EUMenu.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EUMenu.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\FRCustomer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FRCustomer.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DECustomer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DECustomer.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\EUCustomer.Designer.cs">
+      <DependentUpon>EUCustomer.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Data\AUCustomer.Designer.cs">
+      <DependentUpon>AUCustomer.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Data\DEMarketElementId.Designer.cs">
+      <DependentUpon>DEMarketElementId.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Data\FRMarketElementId.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FRMarketElementId.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\FRMenu.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FRMenu.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\JPCustomer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JPCustomer.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\MenuIdMapper.cs" />
+    <Compile Include="Data\USMarketElementId.Designer.cs">
+      <DependentUpon>USMarketElementId.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Data\UKMarketElementId.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UKMarketElementId.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\UKMenu.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UKMenu.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\USCustomer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>USCustomer.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\USMenu.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>USMenu.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\Constant.cs" />
+    <Compile Include="Helpers\CustomerData.cs" />
+    <Compile Include="Helpers\MenuData.cs" />
+    <Compile Include="MainSite\Features\Home page.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Home page.feature</DependentUpon>
+    </Compile>
+    <Compile Include="MainSite\Features\HomePageVideo.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HomePageVideo.feature</DependentUpon>
+    </Compile>
+    <Compile Include="MainSite\Features\MenuBar.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MenuBar.feature</DependentUpon>
+    </Compile>
+    <Compile Include="MainSite\Features\PlaceOrder.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlaceOrder.feature</DependentUpon>
+    </Compile>
+    <Compile Include="MainSite\Hooks.cs" />
+    <Compile Include="MainSite\Pages\AboutUsPage.cs" />
+    <Compile Include="MainSite\Pages\BlogPage.cs" />
+    <Compile Include="MainSite\Pages\ContactUsPage.cs" />
+    <Compile Include="MainSite\Pages\FreeStuffPage.cs" />
+    <Compile Include="MainSite\Pages\Modals\TermsAndConditionsModal.cs" />
+    <Compile Include="MainSite\Pages\OurWorkPage.cs" />
+    <Compile Include="MainSite\Pages\Panels\Footer.cs" />
+    <Compile Include="Data\CountryCode.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CountryCode.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration.cs" />
+    <Compile Include="Data\Card.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Card.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\UKCustomer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UKCustomer.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DataFactory.cs" />
+    <Compile Include="Data\DataHelper.cs" />
+    <Compile Include="Helpers\Enums.cs" />
+    <Compile Include="MainSiteNavigation.cs" />
+    <Compile Include="MainSite\Pages\Panels\Header.cs" />
+    <Compile Include="MainSite\Pages\BasePage.cs" />
+    <Compile Include="MainSite\Pages\HomePage.cs" />
+    <Compile Include="MainSite\Pages\ShopPage.cs" />
+    <Compile Include="MainSite\Pages\UDOMNgPdpPage.cs" />
+    <Compile Include="MainSite\Steps\BlogSteps.cs" />
+    <Compile Include="MainSite\Steps\ContactUsPageSteps.cs" />
+    <Compile Include="MainSite\Steps\FreeStuffStepscs.cs" />
+    <Compile Include="MainSite\Steps\Home Page Steps.cs" />
+    <Compile Include="MainSite\Steps\HomePageVideoSteps.cs" />
+    <Compile Include="MainSite\Steps\MenuBarSteps.cs" />
+    <Compile Include="MainSite\Steps\OurWorkSteps.cs" />
+    <Compile Include="MainSite\Steps\PaymentSteps.cs" />
+    <Compile Include="MainSite\Steps\ShopSteps.cs" />
+    <Compile Include="MainSite\Steps\UDOMNgPdpPageSteps.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Helpers\UIHelper.cs" />
+    <Compile Include="WebDriver\WebDriverFactory.cs" />
+    <Compile Include="WebDriver\WebDriverManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.at-dx.bodenstaging.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.at.main.boden.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.at.main.preprod.boden.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.at.main.stage.boden.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.at.main.stageredesign.boden.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.au-dx.bodenstaging.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.au.main.boden.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.au.main.preprod.boden.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.au.main.stage.boden.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.au.main.stageredesign.boden.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App.de-dx.bodenstaging.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.de.main.boden.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.de.main.preprod.boden.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.de.main.stage.boden.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.de.main.stageredesign.boden.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.Debug.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.eu-dx.bodenstaging.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.eu.main.boden.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.eu.main.preprod.boden.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.eu.main.stage.boden.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.eu.main.stageredesign.boden.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.fr-dx.bodenstaging.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.fr.main.boden.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.fr.main.preprod.boden.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.fr.main.stage.boden.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.fr.main.stageredesign.boden.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.globale.jp.main.stageredesign.boden.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.m-fr-dx.bodenstaging.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.Release.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.uk-dx.bodenstaging.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.uk.main.boden.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.uk.main.preprod.boden.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.uk.main.stage.boden.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.uk.main.stageredesign.boden.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.us-dx.bodenstaging.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.us.main.boden.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.us.main.preprod.boden.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.us.main.stage.boden.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.us.main.stageredesign.boden.com.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="browsermob-proxy-2.1.4\bin\bmp.log" />
+    <None Include="browsermob-proxy-2.1.4\bin\browsermob-proxy" />
+    <None Include="browsermob-proxy-2.1.4\bin\browsermob-proxy.bat" />
+    <None Include="browsermob-proxy-2.1.4\bin\conf\bmp-logging.yaml" />
+    <None Include="browsermob-proxy-2.1.4\README.md" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\BodenCA-2026-Trust.cer" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\ca-certificate-ec.cer" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\ca-certificate-rsa.cer" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\ca-keystore-ec.p12" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\ca-keystore-rsa.p12" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\orca01pdsvtc_BodenRoot-CA-Trust.cer" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\Soputm00pdfwtc-IssuingCA-Trust.cer" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\soputm02pdfwpt-IssuingCA-Trust.cer" />
+    <None Include="browsermob-proxy-2.1.4\ssl-support\Subca01pdsvtc-BodenSub-CA-Trust.cer" />
+    <None Include="MainSite\Features\Home page.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Home page.feature.cs</LastGenOutput>
+    </None>
+    <None Include="MainSite\Features\HomePageVideo.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>HomePageVideo.feature.cs</LastGenOutput>
+    </None>
+    <None Include="MainSite\Features\MenuBar.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>MenuBar.feature.cs</LastGenOutput>
+    </None>
+    <None Include="MainSite\Features\PlaceOrder.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>PlaceOrder.feature.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Data\ATMenu.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ATMenu.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\Menu.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Menu.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\AUMenu.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AUMenu.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\Card.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Card.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\Cookies.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Cookies.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\CountryCode.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CountryCode.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\ATCustomer.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ATCustomer.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\Currency.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Currency.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\ATMarketElementId.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ATMarketElementId.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\AUMarketElementId.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AUMarketElementId.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\EUMarketElementId.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>EUMarketElementId.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\DEMenu.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DEMenu.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\EUMenu.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>EUMenu.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\FRCustomer.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FRCustomer.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\DECustomer.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DECustomer.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\EUCustomer.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>EUCustomer.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\AUCustomer.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AUCustomer.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\DEMarketElementId.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DEMarketElementId.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\FRMarketElementId.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FRMarketElementId.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\FRMenu.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FRMenu.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\JPCustomer.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>JPCustomer.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\USMarketElementId.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>USMarketElementId.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\UKMarketElementId.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>UKMarketElementId.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\UKMenu.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UKMenu.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\USCustomer.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>USCustomer.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\UKCustomer.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UKCustomer.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\USMenu.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>USMenu.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="browsermob-proxy-2.1.4\browsermob-core-2.1.4-javadoc.jar" />
+    <Content Include="browsermob-proxy-2.1.4\browsermob-core-2.1.4-sources.jar" />
+    <Content Include="browsermob-proxy-2.1.4\browsermob-rest-2.1.4-javadoc.jar" />
+    <Content Include="browsermob-proxy-2.1.4\browsermob-rest-2.1.4-sources.jar" />
+    <Content Include="browsermob-proxy-2.1.4\lib\browsermob-dist-2.1.4.jar" />
+    <Content Include="browsermob-proxy-2.1.4\LICENSE.txt" />
+    <Content Include="browsermob-proxy-2.1.4\README.txt" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Selenium.PhantomJS.WebDriver.2.1.1\build\Selenium.PhantomJS.WebDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Selenium.PhantomJS.WebDriver.2.1.1\build\Selenium.PhantomJS.WebDriver.targets'))" />
+    <Error Condition="!Exists('packages\Selenium.Chrome.WebDriver.2.35\build\Selenium.Chrome.WebDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Selenium.Chrome.WebDriver.2.35\build\Selenium.Chrome.WebDriver.targets'))" />
+    <Error Condition="!Exists('packages\NUnit3TestAdapter.3.9.0\build\net35\NUnit3TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\NUnit3TestAdapter.3.9.0\build\net35\NUnit3TestAdapter.props'))" />
+    <Error Condition="!Exists('packages\Selenium.Firefox.WebDriver.0.19.1\build\Selenium.Firefox.WebDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Selenium.Firefox.WebDriver.0.19.1\build\Selenium.Firefox.WebDriver.targets'))" />
+  </Target>
+  <Import Project="packages\Selenium.PhantomJS.WebDriver.2.1.1\build\Selenium.PhantomJS.WebDriver.targets" Condition="Exists('packages\Selenium.PhantomJS.WebDriver.2.1.1\build\Selenium.PhantomJS.WebDriver.targets')" />
+  <Import Project="packages\Selenium.Chrome.WebDriver.2.35\build\Selenium.Chrome.WebDriver.targets" Condition="Exists('packages\Selenium.Chrome.WebDriver.2.35\build\Selenium.Chrome.WebDriver.targets')" />
+  <Import Project="packages\Selenium.Firefox.WebDriver.0.19.1\build\Selenium.Firefox.WebDriver.targets" Condition="Exists('packages\Selenium.Firefox.WebDriver.0.19.1\build\Selenium.Firefox.WebDriver.targets')" />
+  <UsingTask TaskName="TransformXml" AssemblyFile="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Web\Microsoft.Web.Publishing.Tasks.dll" />
+  <Target Name="App_config_AfterCompile" AfterTargets="AfterCompile" Condition="Exists('App.$(Configuration).config')">
+    <!--Generate transformed app config in the intermediate directory-->
+    <TransformXml Source="App.config" Destination="$(IntermediateOutputPath)$(TargetFileName).config" Transform="App.$(Configuration).config" />
+    <!--Force build process to use the transformed configuration file from now on.-->
+    <ItemGroup>
+      <AppConfigWithTargetPath Remove="App.config" />
+      <AppConfigWithTargetPath Include="$(IntermediateOutputPath)$(TargetFileName).config">
+        <TargetPath>$(TargetFileName).config</TargetPath>
+      </AppConfigWithTargetPath>
+    </ItemGroup>
+  </Target>
+  <!--Override After Publish to support ClickOnce AfterPublish. Target replaces the untransformed config file copied to the deployment directory with the transformed one.-->
+  <Target Name="App_config_AfterPublish" AfterTargets="AfterPublish" Condition="Exists('App.$(Configuration).config')">
+    <PropertyGroup>
+      <DeployedConfig>$(_DeploymentApplicationDir)$(TargetName)$(TargetExt).config$(_DeploymentFileMappingExtension)</DeployedConfig>
+    </PropertyGroup>
+    <!--Publish copies the untransformed App.config to deployment directory so overwrite it-->
+    <Copy Condition="Exists('$(DeployedConfig)')" SourceFiles="$(IntermediateOutputPath)$(TargetFileName).config" DestinationFiles="$(DeployedConfig)" />
+  </Target>
+  <Import Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="'$(SQLDBExtensionsRefPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="'$(SQLDBExtensionsRefPath)' == ''" />
+  <PropertyGroup>
+    <SsdtUnitTestVersion>2.0</SsdtUnitTestVersion>
+  </PropertyGroup>
+  <Target Name="ATCustomer_resx_AfterBuild" AfterTargets="AfterBuild" Condition="Exists('ATCustomer.$(Configuration).resx')">
+    <TransformXml Source="ATCustomer.resx" Destination="$(OutputPath)ATCustomer.resx" Transform="ATCustomer.$(Configuration).resx" />
+  </Target>
+</Project>

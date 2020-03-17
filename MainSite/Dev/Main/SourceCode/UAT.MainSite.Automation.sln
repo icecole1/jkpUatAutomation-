@@ -1,0 +1,143 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UAT.MainSite.Automation", "UAT.MainSite.Automation.csproj", "{0C73912E-E365-421E-8296-73A301B584F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{9752AE51-590F-4AB5-BF24-0555409AA394}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.config = .nuget\NuGet.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{609225BA-D015-4582-8ACC-03285B7205F7}"
+	ProjectSection(SolutionItems) = preProject
+		.tfignore = .tfignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		at.main.boden.com|Any CPU = at.main.boden.com|Any CPU
+		at.main.preprod.boden.com|Any CPU = at.main.preprod.boden.com|Any CPU
+		at.main.stage.boden.com|Any CPU = at.main.stage.boden.com|Any CPU
+		at.main.stageredesign.boden.com|Any CPU = at.main.stageredesign.boden.com|Any CPU
+		at-dx.bodenstaging.com|Any CPU = at-dx.bodenstaging.com|Any CPU
+		au.main.boden.com|Any CPU = au.main.boden.com|Any CPU
+		au.main.preprod.boden.com|Any CPU = au.main.preprod.boden.com|Any CPU
+		au.main.stage.boden.com|Any CPU = au.main.stage.boden.com|Any CPU
+		au.main.stageredesign.boden.com|Any CPU = au.main.stageredesign.boden.com|Any CPU
+		au-dx.bodenstaging.com|Any CPU = au-dx.bodenstaging.com|Any CPU
+		de.main.boden.com|Any CPU = de.main.boden.com|Any CPU
+		de.main.preprod.boden.com|Any CPU = de.main.preprod.boden.com|Any CPU
+		de.main.stage.boden.com|Any CPU = de.main.stage.boden.com|Any CPU
+		de.main.stageredesign.boden.com|Any CPU = de.main.stageredesign.boden.com|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		de-dx.bodenstaging.com|Any CPU = de-dx.bodenstaging.com|Any CPU
+		eu.main.boden.com|Any CPU = eu.main.boden.com|Any CPU
+		eu.main.preprod.boden.com|Any CPU = eu.main.preprod.boden.com|Any CPU
+		eu.main.stage.boden.com|Any CPU = eu.main.stage.boden.com|Any CPU
+		eu.main.stageredesign.boden.com|Any CPU = eu.main.stageredesign.boden.com|Any CPU
+		eu-dx.bodenstaging.com|Any CPU = eu-dx.bodenstaging.com|Any CPU
+		fr.main.boden.com|Any CPU = fr.main.boden.com|Any CPU
+		fr.main.preprod.boden.com|Any CPU = fr.main.preprod.boden.com|Any CPU
+		fr.main.stage.boden.com|Any CPU = fr.main.stage.boden.com|Any CPU
+		fr.main.stageredesign.boden.com|Any CPU = fr.main.stageredesign.boden.com|Any CPU
+		fr-dx.bodenstaging.com|Any CPU = fr-dx.bodenstaging.com|Any CPU
+		globale.jp.main.stageredesign.boden.com|Any CPU = globale.jp.main.stageredesign.boden.com|Any CPU
+		Release|Any CPU = Release|Any CPU
+		uk.main.boden.com|Any CPU = uk.main.boden.com|Any CPU
+		uk.main.preprod.boden.com|Any CPU = uk.main.preprod.boden.com|Any CPU
+		uk.main.stage.boden.com|Any CPU = uk.main.stage.boden.com|Any CPU
+		uk.main.stageredesign.boden.com|Any CPU = uk.main.stageredesign.boden.com|Any CPU
+		uk-dx.bodenstaging.com|Any CPU = uk-dx.bodenstaging.com|Any CPU
+		us.main.boden.com|Any CPU = us.main.boden.com|Any CPU
+		us.main.preprod.boden.com|Any CPU = us.main.preprod.boden.com|Any CPU
+		us.main.stage.boden.com|Any CPU = us.main.stage.boden.com|Any CPU
+		us.main.stageredesign.boden.com|Any CPU = us.main.stageredesign.boden.com|Any CPU
+		us-dx.bodenstaging.com|Any CPU = us-dx.bodenstaging.com|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C73912E-E365-421E-8296-73A301B584F0}.at.main.boden.com|Any CPU.ActiveCfg = at.main.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.at.main.boden.com|Any CPU.Build.0 = at.main.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.at.main.preprod.boden.com|Any CPU.ActiveCfg = at.main.preprod.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.at.main.preprod.boden.com|Any CPU.Build.0 = at.main.preprod.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.at.main.stage.boden.com|Any CPU.ActiveCfg = at.main.stage.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.at.main.stage.boden.com|Any CPU.Build.0 = at.main.stage.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.at.main.stageredesign.boden.com|Any CPU.ActiveCfg = at.main.stageredesign.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.at.main.stageredesign.boden.com|Any CPU.Build.0 = at.main.stageredesign.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.at-dx.bodenstaging.com|Any CPU.ActiveCfg = at-dx.bodenstaging.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.at-dx.bodenstaging.com|Any CPU.Build.0 = at-dx.bodenstaging.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.au.main.boden.com|Any CPU.ActiveCfg = au.main.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.au.main.boden.com|Any CPU.Build.0 = au.main.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.au.main.preprod.boden.com|Any CPU.ActiveCfg = au.main.preprod.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.au.main.preprod.boden.com|Any CPU.Build.0 = au.main.preprod.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.au.main.stage.boden.com|Any CPU.ActiveCfg = au.main.stage.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.au.main.stage.boden.com|Any CPU.Build.0 = au.main.stage.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.au.main.stageredesign.boden.com|Any CPU.ActiveCfg = au.main.stageredesign.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.au.main.stageredesign.boden.com|Any CPU.Build.0 = au.main.stageredesign.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.au-dx.bodenstaging.com|Any CPU.ActiveCfg = au-dx.bodenstaging.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.au-dx.bodenstaging.com|Any CPU.Build.0 = au-dx.bodenstaging.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.de.main.boden.com|Any CPU.ActiveCfg = de.main.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.de.main.boden.com|Any CPU.Build.0 = de.main.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.de.main.preprod.boden.com|Any CPU.ActiveCfg = de.main.preprod.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.de.main.preprod.boden.com|Any CPU.Build.0 = de.main.preprod.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.de.main.stage.boden.com|Any CPU.ActiveCfg = de.main.stage.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.de.main.stage.boden.com|Any CPU.Build.0 = de.main.stage.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.de.main.stageredesign.boden.com|Any CPU.ActiveCfg = de.main.stageredesign.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.de.main.stageredesign.boden.com|Any CPU.Build.0 = de.main.stageredesign.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.de-dx.bodenstaging.com|Any CPU.ActiveCfg = de-dx.bodenstaging.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.de-dx.bodenstaging.com|Any CPU.Build.0 = de-dx.bodenstaging.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.eu.main.boden.com|Any CPU.ActiveCfg = eu.main.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.eu.main.boden.com|Any CPU.Build.0 = eu.main.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.eu.main.preprod.boden.com|Any CPU.ActiveCfg = eu.main.preprod.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.eu.main.preprod.boden.com|Any CPU.Build.0 = eu.main.preprod.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.eu.main.stage.boden.com|Any CPU.ActiveCfg = eu.main.stage.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.eu.main.stage.boden.com|Any CPU.Build.0 = eu.main.stage.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.eu.main.stageredesign.boden.com|Any CPU.ActiveCfg = eu.main.stageredesign.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.eu.main.stageredesign.boden.com|Any CPU.Build.0 = eu.main.stageredesign.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.eu-dx.bodenstaging.com|Any CPU.ActiveCfg = eu-dx.bodenstaging.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.eu-dx.bodenstaging.com|Any CPU.Build.0 = eu-dx.bodenstaging.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.fr.main.boden.com|Any CPU.ActiveCfg = fr.main.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.fr.main.boden.com|Any CPU.Build.0 = fr.main.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.fr.main.preprod.boden.com|Any CPU.ActiveCfg = fr.main.preprod.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.fr.main.preprod.boden.com|Any CPU.Build.0 = fr.main.preprod.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.fr.main.stage.boden.com|Any CPU.ActiveCfg = fr.main.stage.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.fr.main.stage.boden.com|Any CPU.Build.0 = fr.main.stage.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.fr.main.stageredesign.boden.com|Any CPU.ActiveCfg = fr.main.stageredesign.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.fr.main.stageredesign.boden.com|Any CPU.Build.0 = fr.main.stageredesign.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.fr-dx.bodenstaging.com|Any CPU.ActiveCfg = fr-dx.bodenstaging.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.fr-dx.bodenstaging.com|Any CPU.Build.0 = fr-dx.bodenstaging.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.globale.jp.main.stageredesign.boden.com|Any CPU.ActiveCfg = globale.jp.main.stageredesign.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.globale.jp.main.stageredesign.boden.com|Any CPU.Build.0 = globale.jp.main.stageredesign.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.uk.main.boden.com|Any CPU.ActiveCfg = uk.main.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.uk.main.boden.com|Any CPU.Build.0 = uk.main.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.uk.main.preprod.boden.com|Any CPU.ActiveCfg = uk.main.preprod.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.uk.main.preprod.boden.com|Any CPU.Build.0 = uk.main.preprod.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.uk.main.stage.boden.com|Any CPU.ActiveCfg = uk.main.stage.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.uk.main.stage.boden.com|Any CPU.Build.0 = uk.main.stage.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.uk.main.stageredesign.boden.com|Any CPU.ActiveCfg = uk.main.stageredesign.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.uk.main.stageredesign.boden.com|Any CPU.Build.0 = uk.main.stageredesign.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.uk-dx.bodenstaging.com|Any CPU.ActiveCfg = uk-dx.bodenstaging.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.uk-dx.bodenstaging.com|Any CPU.Build.0 = uk-dx.bodenstaging.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.us.main.boden.com|Any CPU.ActiveCfg = us.main.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.us.main.boden.com|Any CPU.Build.0 = us.main.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.us.main.preprod.boden.com|Any CPU.ActiveCfg = us.main.preprod.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.us.main.preprod.boden.com|Any CPU.Build.0 = us.main.preprod.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.us.main.stage.boden.com|Any CPU.ActiveCfg = us.main.stage.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.us.main.stage.boden.com|Any CPU.Build.0 = us.main.stage.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.us.main.stageredesign.boden.com|Any CPU.ActiveCfg = us.main.stageredesign.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.us.main.stageredesign.boden.com|Any CPU.Build.0 = us.main.stageredesign.boden.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.us-dx.bodenstaging.com|Any CPU.ActiveCfg = us-dx.bodenstaging.com|Any CPU
+		{0C73912E-E365-421E-8296-73A301B584F0}.us-dx.bodenstaging.com|Any CPU.Build.0 = us-dx.bodenstaging.com|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5FC2A00A-B618-41F2-A14F-7386F974A031}
+	EndGlobalSection
+EndGlobal
